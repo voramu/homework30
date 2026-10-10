@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Склад — WEPRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="warehouse-container">
+    <table class="warehouse">
+      <thead>
+        <tr>
+          <th>Позиция</th>
+          <th class="num">Остаток</th>
+          <th class="num">Хватит на</th>
+          <th class="num">Расход / мес</th>
+          <th class="num">Дозаказать</th>
+          <th class="num">Цена</th>
+          <th class="num">На складе</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Группа 1: Ингредиенты и продукты -->
+        <tr class="group-row">
+          <td colspan="8">
+            <span class="group-title">Ингредиенты и продукты</span>
+            <span class="group-subtitle">на складе 109 861 ₽</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="item-name">Страчателла</div>
+            <div class="item-supplier">Тесаро • кг • срок 5 дн.</div>
+          </td>
+          <td class="num">
+            <div class="main-val">2,1 кг</div>
+            <div class="sub-bar"><div class="bar-fill danger" style="width: 20%;"></div></div>
+          </td>
+          <td class="num danger-text">2,3 дн</td>
+          <td class="num">
+            <div>27,4 кг</div>
+            <div class="sub-val">35 346 ₽</div>
+          </td>
+          <td class="num">
+            <div class="counter-control">
+              <button class="cnt-btn">-</button>
+              <span>8 кг</span>
+              <button class="cnt-btn">+</button>
+            </div>
+          </td>
+          <td class="num">1 290 ₽</td>
+          <td class="num">2 709 ₽</td>
+          <td><span class="badge badge--danger">Критично</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Лосось с/м, филе</div>
+            <div class="item-supplier">Норд Фиш • кг • охл., 0...2</div>
+          </td>
+          <td class="num">
+            <div class="main-val">8,4 кг</div>
+            <div class="sub-bar"><div class="bar-fill danger" style="width: 35%;"></div></div>
+          </td>
+          <td class="num danger-text">2,6 дн</td>
+          <td class="num">
+            <div>96,5 кг</div>
+            <div class="sub-val">139 925 ₽</div>
+          </td>
+          <td class="num">
+            <div class="counter-control">
+              <button class="cnt-btn">-</button>
+              <span>24 кг</span>
+              <button class="cnt-btn">+</button>
+            </div>
+          </td>
+          <td class="num">1 450 ₽</td>
+          <td class="num">12 180 ₽</td>
+          <td><span class="badge badge--danger">Критично</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Томаты черри на ветке</div>
+            <div class="item-supplier">Овощная база • 12 кг</div>
+          </td>
+          <td class="num">
+            <div class="main-val">5,8 кг</div>
+            <div class="sub-bar"><div class="bar-fill warn" style="width: 50%;"></div></div>
+          </td>
+          <td class="num warn-text">2,8 дн</td>
+          <td class="num">
+            <div>61,3 кг</div>
+            <div class="sub-val">25 746 ₽</div>
+          </td>
+          <td class="num">
+            <div class="counter-control">
+              <button class="cnt-btn">-</button>
+              <span>12 кг</span>
+              <button class="cnt-btn">+</button>
+            </div>
+          </td>
+          <td class="num">420 ₽</td>
+          <td class="num">2 436 ₽</td>
+          <td><span class="badge badge--warn">Заканчивается</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Рибай, зачищенный</div>
+            <div class="item-supplier">Мясной дом • кг • вакуум</div>
+          </td>
+          <td class="num">
+            <div class="main-val">21,6 кг</div>
+            <div class="sub-bar"><div class="bar-fill ok" style="width: 85%;"></div></div>
+          </td>
+          <td class="num">8,7 дн</td>
+          <td class="num">
+            <div>74,2 кг</div>
+            <div class="sub-val">161 756 ₽</div>
+          </td>
+          <td class="num">—</td>
+          <td class="num">2 180 ₽</td>
+          <td class="num">47 088 ₽</td>
+          <td><span class="badge badge--ok">В норме</span></td>
+        </tr>
+
+        <!-- Группа 2: Полуфабрикаты собственного производства -->
+        <tr class="group-row">
+          <td colspan="8">
+            <span class="group-title">ПОЛУФАБРИКАТЫ СОБСТВЕННОГО ПРОИЗВОДСТВА</span>
+            <span class="group-subtitle">на складе 11 052 ₽</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Тесто для пиццы, шар 260 г</div>
+            <div class="item-supplier">Своё производство • шт • 48 ч.</div>
+          </td>
+          <td class="num">
+            <div class="main-val">62 шт</div>
+            <div class="sub-bar"><div class="bar-fill warn" style="width: 40%;"></div></div>
+          </td>
+          <td class="num warn-text">1,0 дн</td>
+          <td class="num">
+            <div>1 840 шт</div>
+            <div class="sub-val">84 640 ₽</div>
+          </td>
+          <td class="num">
+            <div class="counter-control">
+              <button class="cnt-btn">-</button>
+              <span>180 шт</span>
+              <button class="cnt-btn">+</button>
+            </div>
+          </td>
+          <td class="num">46 ₽</td>
+          <td class="num">2 852 ₽</td>
+          <td><span class="badge badge--warn">Заканчивается</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Тальятелле свежая</div>
+            <div class="item-supplier">Своё производство • кг • 4 дн.</div>
+          </td>
+          <td class="num">
+            <div class="main-val">3,4 кг</div>
+            <div class="sub-bar"><div class="bar-fill danger" style="width: 25%;"></div></div>
+          </td>
+          <td class="num danger-text">2,4 дн</td>
+          <td class="num">
+            <div>42,6 кг</div>
+            <div class="sub-val">22 152 ₽</div>
+          </td>
+          <td class="num">
+            <div class="counter-control">
+              <button class="cnt-btn">-</button>
+              <span>10 кг</span>
+              <button class="cnt-btn">+</button>
+            </div>
+          </td>
+          <td class="num">520 ₽</td>
+          <td class="num">1 768 ₽</td>
+          <td><span class="badge badge--danger">Критично</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="item-name">Бульон даси</div>
+            <div class="item-supplier">Своё производство • л • 3 дн.</div>
+          </td>
+          <td class="num">
+            <div class="main-val">11,5 л</div>
+            <div class="sub-bar"><div class="bar-fill ok" style="width: 70%;"></div></div>
+          </td>
+          <td class="num">3,6 дн</td>
+          <td class="num">
+            <div>95 л</div>
+            <div class="sub-val">32 640 ₽</div>
+          </td>
+          <td class="num">—</td>
+          <td class="num">340 ₽</td>
+          <td class="num">3 910 ₽</td>
+          <td><span class="badge badge--ok">В норме</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
